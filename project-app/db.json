@@ -9132,17 +9132,29 @@
     {
       "country": "Mayotte",
       "flag": "https://flagcdn.com/w320/yt.png",
-      "id": 2
+      "id": 2,
+      "image": "sadf ",
+      "cities": "London",
+      "date": "4/10/2018",
+      "memories": "asdf"
     },
     {
       "country": "Tunisia",
       "flag": "https://flagcdn.com/w320/tn.png",
-      "id": 3
+      "id": 3,
+      "image": "",
+      "cities": "testing",
+      "date": "test",
+      "memories": "test"
     },
     {
       "country": "Japan",
       "flag": "https://flagcdn.com/w320/jp.png",
-      "id": 4
+      "id": 4,
+      "image": "te",
+      "cities": "test",
+      "date": "test",
+      "memories": "test"
     },
     {
       "country": "Japan",
@@ -9165,87 +9177,6 @@
       "id": 8
     }
   ],
-  "packing-items": [
-    {
-      "id": 1,
-      "text": "Sandals",
-      "checked": false
-    },
-    {
-      "id": 2,
-      "text": "PassPort",
-      "checked": true
-    },
-    {
-      "id": 3,
-      "text": "Swim suit",
-      "checked": false
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 4
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 5
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 6
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 7
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 8
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 9
-    },
-    {
-      "text": "swim",
-      "checked": false,
-      "id": 10
-    },
-    {
-      "text": "swim trunks",
-      "checked": false,
-      "id": 11
-    }
-  ],
-  "favorites": [
-    {
-      "flag": "https://flagcdn.com/w320/at.png",
-      "country": "Austria",
-      "continent": [
-        "Europe"
-      ],
-      "id": 5
-    },
-    {
-      "flag": "https://flagcdn.com/w320/yt.png",
-      "country": "Mayotte",
-      "continent": [
-        "Africa"
-      ],
-      "id": 6
-    },
-    {
-      "flag": "https://flagcdn.com/w320/nc.png",
-      "country": "New Caledonia",
-      "continent": [
-        "Oceania"
-      ],
-      "id": 7
-    }
-  ]
+  "packing-items": [],
+  "favorites": []
 }

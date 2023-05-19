@@ -61,7 +61,7 @@ const [form, setForm] = useState(formOutline)
             <li>{date}</li>
             <li>{cities}</li>
             <li>{memories}</li>
-            <img src={image} alt="user added from trip"/>
+            {image && <img src={image} alt="user added from trip"/>}
         </ul>
     </div>
     <form className='visited-form' onSubmit={e => handleSubmit(e)}>
