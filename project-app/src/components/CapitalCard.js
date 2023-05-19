@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Card from 'react-bootstrap/Card'
 
 // {
 //   "flags": {
@@ -101,9 +102,10 @@ function handleFavs(){
     //     <Button variant="secondary" onClick={() => handleVisit()}>Add to Bucket List</Button>
     <div className='card'>
 
-      <span className='flag'>
+      <figure >
         <img className='flag' src={png} alt={alt}/>
-      </span>
+      </figure>
+      <figcaption>{common}</figcaption>
       <h3>{common}</h3>
       <ul className='country-info'>
       <li>Capital:{capital}</li>
@@ -113,9 +115,8 @@ function handleFavs(){
       <p> Added to your passport!</p> 
       : 
       <button id="visited" className='button' onClick={() => handleVisit()}>Add to Passport</button>}
-
-      {isBucket ?  "Added to your Bucketlist!" :
-      <button id="add_to_bucket" className='button'onClick={() => handleFavs()}>Add to Bucketlist</button>}
+{/* {isBucket ?  "Added to your Bucketlist!" :
+      <button id="add_to_bucket" className='button'onClick={() => handleFavs()}>Add to Bucketlist</button>} */}
     </div>
     // </Card.Body>
     // </Card>

@@ -1,13 +1,15 @@
 import React from 'react'
-import SearchBar from './SearchBar'
+import Container from 'react-bootstrap/esm/Container'
 
-function Menu({search, handleSearch, filterByRegion, sortCountries, handleSort}) {
+function Menu({filterByRegion, sortCountries}) {
 
   
   return (
-    <div>
-      <SearchBar search={search} handleSearch={handleSearch}/>
-      <button onClick={() => sortCountries()}>Sort A-Z</button>
+    <Container className='sort'>
+      {/* <Button onClick={() => sortCountries()} size="lg"> </Button> */}
+      <div>
+        <button onClick={() => sortCountries()}>  Sort A-Z  </button>
+      </div>
       <label>Filter by Continent: </label>
         <select onChange={(e) => filterByRegion(e.target.value)}> 
           <option value='All'>All</option>
@@ -19,8 +21,7 @@ function Menu({search, handleSearch, filterByRegion, sortCountries, handleSort})
           <option value='Oceania'>Oceania</option>
           <option value='Antarctic'>Antarctic</option>
         </select>
-
-    </div>
+    </Container>
   )
 }
 

@@ -15,24 +15,27 @@ import NavBar from './NavBar'
 function App() {
 
   const [visited, setVisited] = useState([])
-  const [favorites, setFavorites] = useState([])
+  // const [favorites, setFavorites] = useState([])
+  const [search, setSearch] = useState('')
   
   function updateVisited(){
-    setVisited()
+    setVisited(visited)
   }
-  function updateFavorites(){
-    setFavorites()
-  }
+  // function updateFavorites(){
+  //   setFavorites()
+  // }
 
-  console.log(visited)
-  console.log(favorites)
+  ///search functionality
+  const handleSearch = (newStr) => {
+    setSearch(newStr)
+  }
 
   return (
     <div id="App">
       <Header />
-      <NavBar />
+      <NavBar handleSearch={handleSearch} search={search}/>
       <Routes>
-          <Route exact path="/" element={<Home updateVisited={updateVisited} updateFavs={updateFavorites}/>}>HOME</Route>
+          <Route exact path="/" element={<Home updateVisited={updateVisited} search={search} handleSearch={handleSearch}/>}>HOME</Route>
           {/* <Route path="/bucket-list" element={<BucketList />}>Bucket List</Route> */}
           <Route path="/visited" element={<Visited />}>Visited</Route>
           <Route path="/packing-list" element={<PackingList />}>Packing List</Route>

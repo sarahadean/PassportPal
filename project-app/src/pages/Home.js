@@ -3,9 +3,8 @@ import CapitalList from './../components/CapitalList'
 import Menu from './../components/Menu'
 
 
-function Home({updateVisited}) {
+function Home({updateVisited, search}) {
 
-  const [search, setSearch] = useState('')
   const [countries, setCountries] = useState([])
   const [selectedContinent, setContinent] = useState('All')
   // const [display, setDisplay] = useState([])
@@ -17,11 +16,6 @@ useEffect(() => {getCountries()},[])
     fetch('http://localhost:3330/countries')
     .then(resp => resp.json())
     .then((countries) => setCountries(countries))
-  }
-
-///search functionality
-  const handleSearch = (newStr) => {
-    setSearch(newStr)
   }
 
   ///updating countries state to be searchable and filterable by continents
@@ -44,7 +38,7 @@ useEffect(() => {getCountries()},[])
 
     return (
       <div>
-        <Menu filterByRegion={filterByRegion} search={search} handleSearch={handleSearch} sortCountries={sortCountries} />
+        <Menu filterByRegion={filterByRegion} sortCountries={sortCountries} />
         <CapitalList countries={filteredCountries} updateVisited={updateVisited}/>
       </div>
     )
