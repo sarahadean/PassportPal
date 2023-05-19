@@ -1,0 +1,229 @@
+/* ~~~~~~~~~~~~stylesheet~~~~~~~~~~~~~ */
+:root{
+  --palette-a: #020301;
+  --palette-b: #1c3f60;
+  --palette-c: #f3f6fa;
+  --palette-d: #afc1d0;
+  --secondary: var(--palette-d);
+  --background: var(--palette-c);
+  --primary: var(--palette-b);
+  
+  }
+
+
+  /* ~~~~~~~~header~~~~~~~~~~ */
+  .App-header {
+    background-color: var(--palette-b);
+    height: 200px;
+    background-image: url('./../public/PassportPal.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    margin: auto;
+  }
+
+h3 {
+  color: var(--palette-d);
+}
+
+
+  
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+/* ~~~~~~~~~~~App Styling~~~~~~~~~~~~~ */
+#App{
+  background-image: linear-gradient(#3093d5, #1f3a5d);
+  background-color: var(--palette-f)
+}
+  
+
+  /* ~~~~~~~~~~~nav bar~~~~~~~~~~~~ */
+#nav-list {
+  margin: 0;
+  padding: 0;
+}
+/* Nav items */
+.nav-bar {
+height: 50px;
+background-color: var(--palette-b);
+font-family: 'Karla', sans-serif;
+font-weight: 600;
+padding: 0px 5px;
+}
+.nav-link {
+  height: auto;
+  line-height: 50px;
+  padding: 10px 15px;
+  color: var(--palette-d);
+  /* border-color: var(--palette-e);
+  border-style: solid;
+  border-width: 4px 2px; */
+}
+
+#nav-bar .active {
+  background-color: var(--palette-e);
+  color: var(--palette-c);
+}
+
+li.nav {
+  display: inline;
+  width: 50px;
+  padding: 5px;
+  margin: 20px;
+  border-right: 1px solid #15798d;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#searchBar {
+  background-color: var(--palette-e);
+  border-color: var(--palette-c);
+  border-style: solid;
+  border-width: 2px 5px 2px 5px;
+  font-size: large;
+  color: var(--palette-b);
+}
+
+/* ~~~~~~~~~~~~~~~~Country cards on home page~~~~~~~~~~~~~~~~~ */
+.cards {
+    margin: 0 auto;
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 8%;
+  }
+    
+.card {
+  max-width: 410px;
+  min-height: 400px;
+  max-height: 400px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 8px solid var();
+  background-color: var(--palette-c);
+  border-color: var(--palette-d);
+  border-width: 3px;
+  border-style: solid;
+  padding: 8% 8% 2% 8%;
+  border-radius: 2%;
+  color: var(--palette-a);
+  /* box-shadow: -3px -2px 4px 6px var(--palette-d); */
+}
+
+.flag {
+  /* background-color: var(--green); */
+  text-align: center;
+  width: 200px;
+  justify-content: center;
+}
+
+image.flag {
+  height: 100%;
+  width: auto;
+}
+    
+.button {
+  display: inline-block;
+  padding: 3px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: var(--palette-d);
+  border-color: var(--palette-e);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  box-shadow: 0 3px #999;
+  margin: 8px;
+}
+
+.button:hover {background-color: var(--palette-f)}
+
+.button:active {
+  background-color: var(--palette-f);
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+/* ~~~~visited page styling ~~~~~~~*/
+.container {
+column-count: 2;
+}
+
+#visited-card {
+  display: grid;
+  width:max-content;
+  height: auto;
+  padding:1%;
+  display: grid;
+  border: 1px solid var(--palette-d);
+  background-color: var(--palette-c);
+  margin: 15px;
+}
+
+.visited-card.visited-form {
+display: grid;
+align-items: end;
+}
+
+.fav-card {
+  /* max-width: 410px;
+  max-height: 400px; */
+  min-height: 400px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: 8px solid var();
+  background-color: var(--palette-c);
+  border-color: var(--palette-d);
+  border-width: 3px;
+  border-style: solid;
+  padding: 1% 1% 1% 1%;
+  border-radius: 2%;
+  color: var(--palette-a);
+  margin: 4%;
+  /* box-shadow: -3px -2px 4px 6px var(--palette-d); */
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+
+.flex-grid {
+  display: flex;
+}
+.col {
+  flex: inline;
+  min-width: 200px;
+}
+/* .col.main{
+  min-width: 180px;
+} */
+
+/* ~~~~~~~~~~~~~topgraphical background~~~~~~~~~~~~~~~ */
+
